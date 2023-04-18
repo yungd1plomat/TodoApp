@@ -33,7 +33,7 @@ namespace TodoApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] TodoList list)
+        public async Task<IActionResult> Post([FromBody] TodoList list)
         {
             if (!ModelState.IsValid)
             {
