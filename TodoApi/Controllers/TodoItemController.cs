@@ -33,8 +33,8 @@ namespace TodoApi.Controllers
             return SingleResult.Create(_todoRepo.GetItemById(key));
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Put([FromODataUri] int key, [FromBody] TodoItem item)
+        [HttpPatch]
+        public async Task<IActionResult> Patch([FromODataUri] int key, [FromBody] TodoItem item)
         {
             if (!ModelState.IsValid)
             {
