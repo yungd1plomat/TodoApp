@@ -27,7 +27,7 @@ namespace TodoClient.Viewmodels
 
         private bool isLoaded { get; set; }
 
-        private TodoRepo _todoRepo { get; set; }
+        private ITodoRepo _todoRepo { get; set; }
 
         public MainPageViewmodel()
         {
